@@ -1,0 +1,23 @@
+<div style="display:block; clear:left">
+<?php
+$storePhone = Mage::getStoreConfig('general/store_information/phone');
+            $storeName = Mage::getStoreConfig('general/store_information/name');
+            $storeAddress = Mage::getStoreConfig('general/store_information/address');
+            $storeEmail = Mage::getStoreConfig('general/store_information/email');
+            $storeMailto = Mage::getStoreConfig('general/store_information/mailto');
+            $storeTel = Mage::getStoreConfig('general/store_information/tel');
+            $storeShowFooter = Mage::getStoreConfig('general/store_information/show');
+if ($storeShowFooter!=0) {
+    if ($storeMailto!=0 && $storeTel==0)
+        echo "$storeName<br/>$storeAddress<br/><a href=".'mailto:'.$storeEmail.">$storeEmail</a><br/>$storePhone";
+    elseif ($storeTel!=0 && $storeMailto==0)
+        echo "$storeName<br/>$storeAddress<br/>$storeEmail<br/><a href=".'tel:'.$storePhone.">$storePhone</a>";
+    elseif ($storeMailto!=0 && $storeTel!=0)
+        echo "$storeName<br/>$storeAddress<br/><a href=".'mailto:'.$storeEmail.">$storeEmail</a><br/><a href=".'tel:'.$storePhone.">$storePhone</a>";
+    else
+        echo "$storeName<br/>$storeAddress<br/>$storeEmail<br/>$storePhone";
+}
+else
+    return 0;
+?>
+</div>

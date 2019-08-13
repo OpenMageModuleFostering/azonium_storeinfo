@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout>
+<default>
+    <reference name="footer">
+        <block type="core/template" name="storeinfo_storeinfo" template="storeinfo/storeinfo.phtml"/>
+    </reference>
+</default>
+</layout>

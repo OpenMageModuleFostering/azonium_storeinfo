@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Azonium_StoreInfo>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Azonium_StoreInfo>
+    </modules>
+</config>

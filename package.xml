@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+    <name>Azonium_StoreInfo</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Store information extension which provides convenient data entry with extra functionality and fetches it to the footer.</summary>
+    <description>Main features of StoreInfo extension:&#xD;
+- Input of email address in General Tab;&#xD;
+- Clickability of email address and phone;&#xD;
+- Optional output of the store information in the footer.</description>
+    <notes>First complete release</notes>
+    <authors><author><name>Andrew Karelsky</name><user>Azonium</user><email>larsteds@gmail.com</email></author></authors>
+    <date>2015-09-21</date>
+    <time>12:28:04</time>
+    <contents><target name="magecommunity"><dir name="Azonium"><dir name="StoreInfo"><dir name="Model"><dir name="Mysql4"><dir name="StoreInfo"><file name="Collection.php" hash="43c9e23070b2aedce478365f41a2506c"/></dir><file name="StoreInfo.php" hash="6b0b9d6d6843111e6b4dd6ccf238b1c4"/></dir><file name="StoreInfo.php" hash="ecbfb4d56904c945ed2e391d805ad39a"/></dir><dir name="controllers"><file name="IndexController.php" hash="39da9256e60dc93bef50a79b92b2ba17"/></dir><dir name="etc"><file name="config.xml" hash="2ac32ac53cf53bf4c5121822f3ad2d84"/><file name="system.xml" hash="f5d1185524bed21728959f81222184d6"/></dir><dir name="sql"><dir name="storeinfo_setup"><file name="mysql4-install-1.0.0.php" hash="a1610a40a91cdee7ab2b4a2c6e1373f1"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="storeinfo.xml" hash="fccc810d5c8b26c0c36d3183c815c267"/></dir><dir name="template"><dir name="storeinfo"><file name="storeinfo.phtml" hash="e45380bdabcb9a1c078a0273cb566bfe"/></dir></dir></dir></dir></dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="storeinfo.xml" hash="c6a311aa10317a7b2b8d579a735226be"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Azonium_StoreInfo.xml" hash="a39d32b5a1ba9ec510e96554b9d255c2"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="storeinfo"><file name="storeinfo.css" hash="4d5e7cef5df1924b0800bb051ff46282"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

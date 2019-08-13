@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config>
+<modules>
+    <Azonium_StoreInfo>
+        <version>1.0.0</version>
+    </Azonium_StoreInfo>
+</modules>
+<frontend>
+    <layout>
+        <updates>
+            <storeinfo>
+                <file>storeinfo.xml</file>
+            </storeinfo>
+        </updates>
+    </layout>
+</frontend>
+<adminhtml>
+    <layout>
+        <updates>
+            <azonium_storeinfo>
+                <file>storeinfo.xml</file>
+            </azonium_storeinfo>
+        </updates>
+    </layout>
+</adminhtml>
+<global>
+    <models>
+        <storeinfo>
+            <class>Azonium_StoreInfo_Model</class>
+            <resourceModel>storeInfo_mysql4</resourceModel>
+        </storeinfo>
+        <storeinfo_mysql4>
+            <class>Azonium_StoreInfo_Model_Mysql4</class>
+            <entities>
+                <storeinfo>
+                    <table>core_config_data</table>
+                </storeinfo>
+            </entities>
+        </storeinfo_mysql4>
+    </models>
+    <resources>
+        <storeinfo_write>
+            <connection>
+                <use>core_write</use>
+            </connection>
+        </storeinfo_write>
+        <storeinfo_read>
+            <connection>
+                <use>core_read</use>
+            </connection>
+        </storeinfo_read>
+        <storeinfo_setup>
+            <setup>
+                <module>Azonium_StoreInfo</module>
+            </setup>
+            <connection>
+                <use>core_setup</use>
+            </connection>
+        </storeinfo_setup>
+    </resources>
+</global>
+</config>
+
+
+
+
+
+
+
+
