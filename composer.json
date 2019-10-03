@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Azonium_StoreInfo",
+    "name": "OpenMageModuleFostering\/Azonium_StoreInfo",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Store information extension which provides convenient data entry with extra functionality and fetches it to the footer.",
     "authors": [
-    {
-        "name": "Andrew Karelsky",
-        "email": "larsteds@gmail.com"
-    }
-],
+        {
+            "name": "Andrew Karelsky",
+            "email": "larsteds@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
